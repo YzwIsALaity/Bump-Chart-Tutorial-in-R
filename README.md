@@ -1,10 +1,3 @@
----
-title:  "Bump Chart in R with ggplot2"
-mathjax: true
-layout: post
-categories: media
----
-
 
 ![Cover](/Users/yonwang/Desktop/Bump Chart/Figure/Bump Chart 2.jpeg)
 

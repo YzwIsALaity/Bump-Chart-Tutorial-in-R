@@ -1,5 +1,5 @@
 
-![Cover](/Users/yonwang/Desktop/Bump Chart/Figure/Bump Chart 2.jpeg)
+![Cover](https://github.com/YzwIsALaity/Bump-Chart-Tutorial-in-R/blob/09e5ddb7a89f9ca80013383e2ef6fee2b5666ffb/Bump%20Chart%202.jpeg)
 
 
 In this tutorial, I aim to demonstrate how to effectively visualize the changes in ranks over time using a __bump chart__ created with `ggplot2` and `ggbump` package. A bump chart is a specialized type of line plot specifically designed to __display the relative ranks or orders of subjects as they evolve over time__. __Unlike an alluvium plot__, which showcases the actual values or metrics for each subject over time, a bump chart focuses solely on the ranking aspect. To accomplish this, I will utilize the publicly available dataset for Covid-19 surveillance provided by the [Seattle Flu Study](https://seattleflu.org/pathogens). This dataset comprises the recorded number of specimens received in various collection channels in Seattle, WA, for each month. Consequently, it offers both the actual values and the corresponding ranks of specimens within each channel.
@@ -15,7 +15,7 @@ After data preprocessing, we first look at the dataset, which comprises 4 column
 
 - `Rank`: it indicated the rank of `Total` (numerical).
 
-![](/Users/yonwang/Desktop/Bump Chart/Figure/Dataset.png)
+![](https://github.com/YzwIsALaity/Bump-Chart-Tutorial-in-R/blob/09e5ddb7a89f9ca80013383e2ef6fee2b5666ffb/Dataset.png)
 
 We basically need to use `collection_channel`, `Year`, and `Rank` variables for creating bump charts.
 
@@ -38,7 +38,7 @@ ggplot(Dt,
 p
 ```
 
-![](/Users/yonwang/Desktop/Bump Chart/Figure/Bump Chart 1.jpeg)
+![](https://github.com/YzwIsALaity/Bump-Chart-Tutorial-in-R/blob/09e5ddb7a89f9ca80013383e2ef6fee2b5666ffb/Bump%20Chart%201.jpeg)
 
 In this preliminary bump chart, it is obvious that __the first rank, representing the highest count of collected specimens, is positioned at the bottom of the y-axis__. However, some people may __prefer to have the first rank at the top of the chart__. To accommodate this preference, we need to reverse the order of the y-axis scale.
 
@@ -83,6 +83,6 @@ ggplot(Dt, aes(x = Year,
 p
 ```
 
-![](/Users/yonwang/Desktop/Bump Chart/Figure/Bump Chart 2.jpeg)
+![](https://github.com/YzwIsALaity/Bump-Chart-Tutorial-in-R/blob/09e5ddb7a89f9ca80013383e2ef6fee2b5666ffb/Bump%20Chart%202.jpeg)
 
 Here we go!
